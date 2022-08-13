@@ -102,6 +102,25 @@ main{
     display: none;
 }
 
+.girar{
+    animation-name: girar;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes girar{
+    fron{
+        transform: scale(1);
+
+    }
+
+    to{
+        transform: scale(2);
+
+    }
+}
+
+
 /* main galeria */
 
 .main-dos{
@@ -178,6 +197,14 @@ main{
 
 /* imagenes */
 
+.animacion{
+    transform: rotate(1deg);
+}
+
+.animacion:hover{
+    transform: scale(0.5);
+}
+
 .imagen-uno{
     grid-area: imagen-uno;
     text-align: center;
@@ -220,6 +247,7 @@ main{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px;
 }
+
 
 .parrafo-dos{
     grid-area: parrafo-dos;
