@@ -38,8 +38,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(70deg, rgb(73, 72, 73), rgb(97, 97, 97));
-    padding: 5px;
+    padding: 2px;
 }
 
 header a{
@@ -51,24 +50,43 @@ nav a{
     color: rgb(75, 75, 75);
 }
 
+a:hover{
+    background-color: rgb(139, 139, 139);
+}
+
+button{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(53, 53, 53);
+}
 
 header h1{
-    margin-bottom: 1rem;
     font-size: 2rem;
+    background-color: rgb(114, 114, 114);
 }
 
 header nav ul{
     display: flex;
     column-gap: 10px;
+    background-color: rgb(122, 122, 122);
 }
 
 header nav ul li{
     list-style: none;
-    background-color: rgb(196, 194, 199);
+    background-color: rgb(122, 122, 122);
     padding: 5px;
-    border-radius: 25px;
     font-weight: bold;
 }
+
+
+.menu{
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(53, 53, 53);
+}
+
 
 /* barra de navegacion fija */
 
@@ -129,7 +147,7 @@ main{
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
     grid-template-areas:"main-p main-p"
-                        "imagen-uno imagen-dos"
+                        "parrafo parrafo"
                         "parrafo parrafo";
     justify-content: center;
     justify-items: center;
@@ -184,7 +202,6 @@ main{
 
 /* main */
 
-
 .main-p{
     grid-area: main-p;
     text-align: center;
@@ -193,6 +210,7 @@ main{
     line-height: 2rem;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 50px;
 }
 
 /* imagenes */
