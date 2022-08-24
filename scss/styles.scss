@@ -1,9 +1,14 @@
 
 // aquí iniciariamos el codigo en scss
+
+
 //aplicamos el primer poder = NESTIGN
-//aplicamos segundo poder = VARIABLES
-$color-principal: rgb(139, 139, 139); 
-$color-secundario: rgb(122, 122, 122);
+
+
+//llamamos a las variables
+/*accedemos a las variables partials*/
+@import "bases/variables";
+
 
 /* reset */
 *{
