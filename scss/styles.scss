@@ -1,9 +1,9 @@
-/* reset */
 
 // aquí iniciariamos el codigo en scss
-
 //aplicamos el primer poder = NESTIGN
-
+//aplicamos segundo poder = VARIABLES
+$color-principal: rgb(139, 139, 139); 
+/* reset */
 *{
     margin: 0;
     padding: 0;
@@ -55,12 +55,19 @@ header{
     }
 }
 
+a{
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+
+    }
+
+
 header a{
     text-decoration: none;
 }
 
 a:hover{
-    background-color: rgb(139, 139, 139);
+    background-color: $color-principal;
 }
 
 button{
@@ -74,7 +81,6 @@ header h1{
     font-size: 2rem;
     background-color: rgb(114, 114, 114);
 }
-
 
 
 .menu{
@@ -289,10 +295,6 @@ figcaption{
     padding: 2px;
 }
 
-a{
-    color: rgb(51, 51, 51);
-    text-decoration: none;
-}
 
 /* pie de pagina */
 
@@ -301,13 +303,13 @@ footer{
     grid-area: footer;
     text-align: center;
     font-size: large;
+    footer a{
+        font-size: medium;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
 }
 
-footer a{
-    font-size: medium;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-}
 
 /* mediaquerie */
 
