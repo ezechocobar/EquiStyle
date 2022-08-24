@@ -3,6 +3,8 @@
 //aplicamos el primer poder = NESTIGN
 //aplicamos segundo poder = VARIABLES
 $color-principal: rgb(139, 139, 139); 
+$color-secundario: rgb(122, 122, 122);
+
 /* reset */
 *{
     margin: 0;
@@ -47,9 +49,9 @@ header{
     color: rgb(66, 66, 66);
     display: flex;
     column-gap: 10px;
-    background-color: rgb(122, 122, 122);
+    background-color: $color-secundario;
     list-style: none;
-    background-color: rgb(122, 122, 122);
+    background-color: $color-secundario;
     padding: 5px;
     font-weight: bold;
     }
