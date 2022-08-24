@@ -40,10 +40,6 @@ header {
 header a {
   text-decoration: none; }
 
-nava aa {
-  text-decoration: none;
-  color: #4b4b4b; }
-
 a:hover {
   background-color: #8b8b8b; }
 
@@ -56,17 +52,6 @@ button {
 header h1 {
   font-size: 2rem;
   background-color: #727272; }
-
-headera nav ula {
-  display: flex;
-  column-gap: 10px;
-  background-color: #7a7a7a; }
-
-headera nav ul lia {
-  list-style: none;
-  background-color: #7a7a7a;
-  padding: 5px;
-  font-weight: bold; }
 
 .menu {
   font-style: italic;
