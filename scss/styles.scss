@@ -32,11 +32,9 @@ body{
 /* titulos */
 
 h1, h2{
-    color: $color-terceario;
     font-weight: bold;
     font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h2{
     font-size: larger;
@@ -51,8 +49,8 @@ header{
     align-items: center;
     padding: 2px;
     nav{
+    color: $color-secundario;
     text-decoration: none;
-    color: $color-terceario;
     display: flex;
     column-gap: 10px;
     background-color: $color-terceario;
@@ -77,11 +75,11 @@ header a{
 }
 
 a:hover a:focus{
-    background-color: $color-secundario;
+    background-color: $color-hover;
 }
 
 .hoverindex:hover{
-    background-color: $color-secundario;
+    background-color: $color-hover;
     color: $color-terceario;
 }
 
@@ -92,8 +90,10 @@ button{
 }
 
 header h1{
-    font-size: 2rem;
-    background-color: $color-terceario;
+    font-size: 1.5rem;
+    color: rgb(73, 60, 23);
+    font-weight: bold;
+
 }
 
 main div{
