@@ -46,8 +46,12 @@ a {
 header a {
   text-decoration: none; }
 
-a:hover {
+a:hover a:focus {
   background-color: #ffda9e; }
+
+.hoverindex:hover {
+  background-color: #ffda9e;
+  color: #8e713a; }
 
 button {
   font-style: italic;
@@ -217,6 +221,9 @@ figcaption {
   font-weight: bold;
   padding: 2px; }
 
+figcaption cite a {
+  color: #8e713a; }
+
 /* pie de pagina */
 footer div {
   background-color: #8e713a;
@@ -224,9 +231,13 @@ footer div {
   text-align: center;
   font-size: large;
   color: #000; }
-  footer div a {
-    background-color: #8e713a;
-    color: #8e713a; }
+  footer div .afooter {
+    color: black; }
+    footer div .afooter .afooter:hover {
+      background-color: #8e713a; }
+
+footer {
+  color: #000; }
 
 /* mediaquerie */
 /* mediaquerie mobile*/

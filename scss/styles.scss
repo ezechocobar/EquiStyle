@@ -76,8 +76,13 @@ header a{
     
 }
 
-a:hover{
+a:hover a:focus{
     background-color: $color-secundario;
+}
+
+.hoverindex:hover{
+    background-color: $color-secundario;
+    color: $color-terceario;
 }
 
 button{
@@ -239,7 +244,8 @@ main{
 .animacion{
     transform: rotate(0.5deg);
  &:hover{
-        transform: scale(0.9);
+    transform: scale(0.9);
+        
     }
 }
 
@@ -312,6 +318,10 @@ figcaption{
     padding: 2px;
 }
 
+figcaption cite a{
+    color: $color-terceario;
+}
+
 
 /* pie de pagina */
 
@@ -321,11 +331,18 @@ footer div{
     text-align: center;
     font-size: large;
     color: #000;
-    a{
-        background-color: $color-terceario;
-        color: $color-terceario;
+    .afooter{
+        color: black;
+
+        .afooter:hover{
+            background-color: $color-terceario;
+        }
     }
 
+}
+
+footer{
+    color: #000;
 }
 
 /* mediaquerie */
