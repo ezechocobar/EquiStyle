@@ -165,6 +165,10 @@ main{
 }
 
 
+.mapa{
+    grid-area: mapa;
+}
+
 /* main galeria */
 
 .main-dos{
@@ -204,6 +208,7 @@ main{
 
     grid-template-areas:"main-p main-p"
                         "parrafo parrafo"
+                        "mapa mapa"
                         "parrafo-dos parrafo-dos";
     justify-content: center;
     justify-items: center;

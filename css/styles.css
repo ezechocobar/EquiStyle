@@ -107,6 +107,9 @@ main {
   to {
     transform: scale(0.9); } }
 
+.mapa {
+  grid-area: mapa; }
+
 /* main galeria */
 .main-dos {
   height: 100vh;
@@ -133,7 +136,7 @@ main {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
-  grid-template-areas: "main-p main-p" "parrafo parrafo" "parrafo-dos parrafo-dos";
+  grid-template-areas: "main-p main-p" "parrafo parrafo" "mapa mapa" "parrafo-dos parrafo-dos";
   justify-content: center;
   justify-items: center;
   align-items: center; }
