@@ -112,11 +112,14 @@ main {
 
 /* main galeria */
 .main-dos {
+  grid-area: maindos; }
+
+.main-dos {
   height: 100vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
-  grid-template-areas: "main-p main-p" "parrafo parrafo" "parrafo parrafo";
+  grid-template-areas: "main-p main-p" "parrafo parrafo" "parrafo parrafo" "parrafo parrafo" "footer footer" "footer footer";
   justify-content: center;
   justify-items: center;
   align-items: center; }
@@ -129,7 +132,8 @@ main {
   grid-template-areas: "main-p main-p" "imagen-uno imagen-dos" "imagen-tres imagen-cuatro" "parrafo parrafo" "footer footer";
   justify-content: center;
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  align-content: center; }
 
 .main-cuatro {
   height: 100vh;
@@ -240,7 +244,8 @@ footer div {
       background-color: #8e713a; }
 
 footer {
-  color: #000; }
+  color: #000;
+  grid-area: footer; }
 
 /* mediaquerie */
 /* mediaquerie mobile*/

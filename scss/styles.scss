@@ -170,7 +170,9 @@ main{
 }
 
 /* main galeria */
-
+.main-dos{
+    grid-area: maindos;
+}
 .main-dos{
     height: 100vh;
     display: grid;
@@ -178,7 +180,10 @@ main{
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
     grid-template-areas:"main-p main-p"
                         "parrafo parrafo"
-                        "parrafo parrafo";
+                        "parrafo parrafo"
+                        "parrafo parrafo"
+                        "footer footer"
+                        "footer footer";
     justify-content: center;
     justify-items: center;
     align-items: center;   
@@ -198,6 +203,7 @@ main{
     justify-content: center;
     justify-items: center;
     align-items: center;   
+    align-content: center;
 }
 
 .main-cuatro{
@@ -348,6 +354,7 @@ footer div{
 
 footer{
     color: #000;
+    grid-area: footer;
 }
 
 /* mediaquerie */
