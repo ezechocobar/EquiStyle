@@ -24,14 +24,14 @@
 
 
 body{
-    background: linear-gradient(70deg, rgb(111, 109, 114), rgb(255, 255, 255));
+    background: whitesmoke;
 }
 
 
 /* titulos */
 
 h1, h2{
-    color: rgb(46, 44, 48);
+    color: lightcoral;
     font-weight: bold;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -51,7 +51,7 @@ header{
     padding: 2px;
     nav{
     text-decoration: none;
-    color: rgb(66, 66, 66);
+    color: lightcoral;
     display: flex;
     column-gap: 10px;
     background-color: $color-secundario;
@@ -65,8 +65,7 @@ header{
 a{
     color: rgb(51, 51, 51);
     text-decoration: none;
-
-    }
+}
 
 
 header a{
@@ -81,12 +80,12 @@ button{
     font-style: italic;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(53, 53, 53);
+    background-color: coral;
 }
 
 header h1{
     font-size: 2rem;
-    background-color: rgb(114, 114, 114);
+    background-color: rgb(155, 87, 87);
 }
 
 
@@ -94,7 +93,7 @@ header h1{
     font-style: italic;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(185, 154, 154);
 }
 
 
@@ -226,12 +225,12 @@ main{
 /* imagenes */
 
 .animacion{
-    transform: rotate(1deg);
+    transform: rotate(0.5deg);
+ &:hover{
+        transform: scale(0.9);
+    }
 }
 
-.animacion:hover{
-    transform: scale(0.5);
-}
 
 .imagen-uno{
     grid-area: imagen-uno;
@@ -255,6 +254,7 @@ main{
     padding: 10px;
 }
 
+
 .imagen-cuatro{
     grid-area: imagen-cuatro;
     text-align: center;
@@ -263,7 +263,7 @@ main{
 }
 
 
-/* estilo al parrafo */
+/* estilo de los parrafos */
 
 .parrafo{
     grid-area: parrafo;
@@ -275,8 +275,6 @@ main{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px;
 }
-
-
 .parrafo-dos{
     grid-area: parrafo-dos;
     text-align: center;
@@ -287,6 +285,7 @@ main{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 5px;
 }
+
 
 ul ol{
     color: rgb(63, 63, 63);

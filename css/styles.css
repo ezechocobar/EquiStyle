@@ -8,11 +8,11 @@
 /* estilos generales */
 /* body */
 body {
-  background: linear-gradient(70deg, #6f6d72, white); }
+  background: whitesmoke; }
 
 /* titulos */
 h1, h2 {
-  color: #2e2c30;
+  color: lightcoral;
   font-weight: bold;
   font-style: italic;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
@@ -29,12 +29,12 @@ header {
   padding: 2px; }
   header nav {
     text-decoration: none;
-    color: #424242;
+    color: lightcoral;
     display: flex;
     column-gap: 10px;
-    background-color: #7a7a7a;
+    background-color: #ce3b3b;
     list-style: none;
-    background-color: #7a7a7a;
+    background-color: #ce3b3b;
     padding: 5px;
     font-weight: bold; }
 
@@ -46,23 +46,23 @@ header a {
   text-decoration: none; }
 
 a:hover {
-  background-color: #8b8b8b; }
+  background-color: #b82b2b; }
 
 button {
   font-style: italic;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  background-color: #353535; }
+  background-color: coral; }
 
 header h1 {
   font-size: 2rem;
-  background-color: #727272; }
+  background-color: #9b5757; }
 
 .menu {
   font-style: italic;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  background-color: #353535; }
+  background-color: #b99a9a; }
 
 /* barra de navegacion fija */
 .menu {
@@ -149,10 +149,9 @@ main {
 
 /* imagenes */
 .animacion {
-  transform: rotate(1deg); }
-
-.animacion:hover {
-  transform: scale(0.5); }
+  transform: rotate(0.5deg); }
+  .animacion:hover {
+    transform: scale(0.9); }
 
 .imagen-uno {
   grid-area: imagen-uno;
@@ -179,7 +178,7 @@ main {
   color: #030303;
   padding: 10px; }
 
-/* estilo al parrafo */
+/* estilo de los parrafos */
 .parrafo {
   grid-area: parrafo;
   text-align: center;
