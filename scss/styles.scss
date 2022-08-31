@@ -24,7 +24,7 @@
 
 
 body{
-    background: whitesmoke;
+    background: $color-terceario;
 }
 
 
@@ -62,25 +62,26 @@ header{
     }
 }
 
+
 a{
-    color: rgb(161, 83, 83);
+    background-color: $color-principal;
     text-decoration: none;
 }
 
 
 header a{
     text-decoration: none;
+    
 }
 
 a:hover{
-    background-color: $color-principal;
+    background-color: $color-secundario;
 }
 
 button{
     font-style: italic;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    background-color: $color-secundario;
 }
 
 header h1{
@@ -88,6 +89,10 @@ header h1{
     background-color: $color-secundario;
 }
 
+div{
+    background-color: $color-principal;
+    color: $color-secundario;
+}
 
 .menu{
     font-style: italic;
@@ -288,7 +293,6 @@ main{
 
 
 ul ol{
-    color: rgb(240, 240, 240);
     font-size: larger;
     font-weight: bolder;
 }
@@ -366,7 +370,7 @@ footer{
 
     body{
         font-family: 'Roboto', sans-serif;
-        background-color: $color-principal;
+        background-color: $color-terceario;
 
     }
 }

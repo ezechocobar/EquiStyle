@@ -8,7 +8,7 @@
 /* estilos generales */
 /* body */
 body {
-  background: whitesmoke; }
+  background: lightblue; }
 
 /* titulos */
 h1, h2 {
@@ -32,31 +32,34 @@ header {
     color: lightblue;
     display: flex;
     column-gap: 10px;
-    background-color: lightcoral;
+    background-color: #7fb3d5;
     list-style: none;
-    background-color: lightcoral;
+    background-color: #7fb3d5;
     padding: 5px;
     font-weight: bold; }
 
 a {
-  color: #a15353;
+  background-color: lightblue;
   text-decoration: none; }
 
 header a {
   text-decoration: none; }
 
 a:hover {
-  background-color: lightblue; }
+  background-color: #7fb3d5; }
 
 button {
   font-style: italic;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-  background-color: lightcoral; }
+  font-family: 'Roboto', sans-serif; }
 
 header h1 {
   font-size: 2rem;
-  background-color: lightcoral; }
+  background-color: #7fb3d5; }
+
+div {
+  background-color: lightblue;
+  color: #7fb3d5; }
 
 .menu {
   font-style: italic;
@@ -200,7 +203,6 @@ main {
   padding: 5px; }
 
 ul ol {
-  color: #f0f0f0;
   font-size: larger;
   font-weight: bolder; }
 
@@ -212,7 +214,7 @@ figcaption {
 
 /* pie de pagina */
 footer {
-  background: lightcoral;
+  background: #7fb3d5;
   grid-area: footer;
   text-align: center;
   font-size: large; }
@@ -243,7 +245,7 @@ footer {
   header {
     flex-direction: row;
     justify-content: space-around;
-    background-color: lightcoral; }
+    background-color: #7fb3d5; }
   body {
     font-family: 'Roboto', sans-serif;
     background-color: lightblue; } }
