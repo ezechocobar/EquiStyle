@@ -66,7 +66,7 @@ header{
 
 a{
     text-decoration: none;
-    color: $color-secundario;
+    color: $color-terceario;
     font-weight: bold;
 }
 
@@ -143,18 +143,18 @@ main{
 
 .girar{
     animation-name: girar;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-timing-function: linear;
 }
 
 @keyframes girar{
     fron{
-        transform: scale(1);
+        transform: scale(2s);
 
     }
 
     to{
-        transform: scale(2);
+        transform: scale(0.9);
 
     }
 }
@@ -320,10 +320,11 @@ footer div{
     grid-area: footer;
     text-align: center;
     font-size: large;
-    footer div p a{
-        background-color: black;
+    color: #000;
+    a{
+        background-color: $color-terceario;
+        color: $color-terceario;
     }
-
 
 }
 
@@ -379,4 +380,8 @@ footer div{
         background-color: $color-principal;
 
     }
+    a:hover{
+        background-color: $color-secundario;
+    }
+    
 }

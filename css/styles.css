@@ -8,11 +8,11 @@
 /* estilos generales */
 /* body */
 body {
-  background: lightblue; }
+  background: #fff4e3; }
 
 /* titulos */
 h1, h2 {
-  color: #1682a3;
+  color: #8e713a;
   font-weight: bold;
   font-style: italic;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
@@ -29,25 +29,25 @@ header {
   padding: 2px; }
   header nav {
     text-decoration: none;
-    color: #1682a3;
+    color: #8e713a;
     display: flex;
     column-gap: 10px;
-    background-color: #1682a3;
+    background-color: #8e713a;
     list-style: none;
-    background-color: #1682a3;
+    background-color: #8e713a;
     padding: 5px;
     font-weight: bold; }
 
 a {
   text-decoration: none;
-  color: #7fb3d5;
+  color: #8e713a;
   font-weight: bold; }
 
 header a {
   text-decoration: none; }
 
 a:hover {
-  background-color: #7fb3d5; }
+  background-color: #ffda9e; }
 
 button {
   font-style: italic;
@@ -56,20 +56,20 @@ button {
 
 header h1 {
   font-size: 2rem;
-  background-color: #1682a3; }
+  background-color: #8e713a; }
 
 main div {
-  background-color: lightblue; }
+  background-color: #fff4e3; }
 
 div {
-  background-color: #1682a3;
-  color: #7fb3d5; }
+  background-color: #8e713a;
+  color: #ffda9e; }
 
 .menu {
   font-style: italic;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  background-color: lightblue; }
+  background-color: #fff4e3; }
 
 /* barra de navegacion fija */
 .menu {
@@ -79,7 +79,7 @@ div {
 
 /* estilos del main */
 main {
-  background-color: lightblue;
+  background-color: #fff4e3;
   height: 100vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -94,14 +94,14 @@ main {
 
 .girar {
   animation-name: girar;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-timing-function: linear; }
 
 @keyframes girar {
   fron {
-    transform: scale(1); }
+    transform: scale(2s); }
   to {
-    transform: scale(2); } }
+    transform: scale(0.9); } }
 
 /* main galeria */
 .main-dos {
@@ -219,12 +219,14 @@ figcaption {
 
 /* pie de pagina */
 footer div {
-  background-color: #1682a3;
+  background-color: #8e713a;
   grid-area: footer;
   text-align: center;
-  font-size: large; }
-  footer div footer div p a {
-    background-color: black; }
+  font-size: large;
+  color: #000; }
+  footer div a {
+    background-color: #8e713a;
+    color: #8e713a; }
 
 /* mediaquerie */
 /* mediaquerie mobile*/
@@ -248,7 +250,9 @@ footer div {
   header {
     flex-direction: row;
     justify-content: space-around;
-    background-color: #1682a3; }
+    background-color: #8e713a; }
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: lightblue; } }
+    background-color: #fff4e3; }
+  a:hover {
+    background-color: #ffda9e; } }
