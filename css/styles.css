@@ -8,7 +8,7 @@
 /* estilos generales */
 /* body */
 body {
-  background: #7fb3d5; }
+  background: lightblue; }
 
 /* titulos */
 h1, h2 {
@@ -32,14 +32,16 @@ header {
     color: #1682a3;
     display: flex;
     column-gap: 10px;
-    background-color: lightblue;
+    background-color: #1682a3;
     list-style: none;
-    background-color: lightblue;
+    background-color: #1682a3;
     padding: 5px;
     font-weight: bold; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #7fb3d5;
+  font-weight: bold; }
 
 header a {
   text-decoration: none; }
@@ -54,10 +56,13 @@ button {
 
 header h1 {
   font-size: 2rem;
-  background-color: #7fb3d5; }
+  background-color: #1682a3; }
+
+main div {
+  background-color: lightblue; }
 
 div {
-  background-color: lightblue;
+  background-color: #1682a3;
   color: #7fb3d5; }
 
 .menu {
@@ -213,25 +218,13 @@ figcaption {
   padding: 2px; }
 
 /* pie de pagina */
-footer {
-  background: #1682a3;
+footer div {
+  background-color: #1682a3;
   grid-area: footer;
   text-align: center;
   font-size: large; }
-  footer footer a {
-    font-size: medium;
-    font-weight: bold;
-    color: black; }
-
-.galeriafooter {
-  background: #1682a3;
-  grid-area: footer;
-  text-align: center;
-  font-size: large; }
-  .galeriafooter footer a {
-    font-size: medium;
-    font-weight: bold;
-    color: black; }
+  footer div footer div p a {
+    background-color: black; }
 
 /* mediaquerie */
 /* mediaquerie mobile*/
@@ -255,7 +248,7 @@ footer {
   header {
     flex-direction: row;
     justify-content: space-around;
-    background-color: #7fb3d5; }
+    background-color: #1682a3; }
   body {
     font-family: 'Roboto', sans-serif;
     background-color: lightblue; } }
