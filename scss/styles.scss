@@ -24,14 +24,14 @@
 
 
 body{
-    background: $color-terceario;
+    background: $color-secundario;
 }
 
 
 /* titulos */
 
 h1, h2{
-    color: $color-principal;
+    color: $color-terceario;
     font-weight: bold;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -51,12 +51,12 @@ header{
     padding: 2px;
     nav{
     text-decoration: none;
-    color: $color-principal;
+    color: $color-terceario;
     display: flex;
     column-gap: 10px;
-    background-color: $color-secundario;
+    background-color: $color-principal;
     list-style: none;
-    background-color: $color-secundario;
+    background-color: $color-principal;
     padding: 5px;
     font-weight: bold;
     }
@@ -64,7 +64,6 @@ header{
 
 
 a{
-    background-color: $color-principal;
     text-decoration: none;
 }
 
@@ -114,6 +113,7 @@ div{
 /* estilos del main */
 
 main{
+    background-color: $color-principal;
     height: 100vh;
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -309,7 +309,7 @@ figcaption{
 /* pie de pagina */
 
 footer{
-    background: $color-secundario;
+    background: $color-terceario;
     grid-area: footer;
     text-align: center;
     font-size: large;
@@ -320,6 +320,17 @@ footer{
     }
 }
 
+.galeriafooter{
+    background: $color-terceario;
+    grid-area: footer;
+    text-align: center;
+    font-size: large;
+    footer a{
+        font-size: medium;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+}
 
 /* mediaquerie */
 
@@ -370,7 +381,7 @@ footer{
 
     body{
         font-family: 'Roboto', sans-serif;
-        background-color: $color-terceario;
+        background-color: $color-principal;
 
     }
 }

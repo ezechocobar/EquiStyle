@@ -8,11 +8,11 @@
 /* estilos generales */
 /* body */
 body {
-  background: lightblue; }
+  background: #7fb3d5; }
 
 /* titulos */
 h1, h2 {
-  color: lightblue;
+  color: #1682a3;
   font-weight: bold;
   font-style: italic;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
@@ -29,17 +29,16 @@ header {
   padding: 2px; }
   header nav {
     text-decoration: none;
-    color: lightblue;
+    color: #1682a3;
     display: flex;
     column-gap: 10px;
-    background-color: #7fb3d5;
+    background-color: lightblue;
     list-style: none;
-    background-color: #7fb3d5;
+    background-color: lightblue;
     padding: 5px;
     font-weight: bold; }
 
 a {
-  background-color: lightblue;
   text-decoration: none; }
 
 header a {
@@ -75,6 +74,7 @@ div {
 
 /* estilos del main */
 main {
+  background-color: lightblue;
   height: 100vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -214,11 +214,21 @@ figcaption {
 
 /* pie de pagina */
 footer {
-  background: #7fb3d5;
+  background: #1682a3;
   grid-area: footer;
   text-align: center;
   font-size: large; }
   footer footer a {
+    font-size: medium;
+    font-weight: bold;
+    color: black; }
+
+.galeriafooter {
+  background: #1682a3;
+  grid-area: footer;
+  text-align: center;
+  font-size: large; }
+  .galeriafooter footer a {
     font-size: medium;
     font-weight: bold;
     color: black; }
