@@ -31,7 +31,7 @@ body{
 /* titulos */
 
 h1, h2{
-    color: lightcoral;
+    color: $color-principal;
     font-weight: bold;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -51,7 +51,7 @@ header{
     padding: 2px;
     nav{
     text-decoration: none;
-    color: lightcoral;
+    color: $color-principal;
     display: flex;
     column-gap: 10px;
     background-color: $color-secundario;
@@ -63,7 +63,7 @@ header{
 }
 
 a{
-    color: rgb(51, 51, 51);
+    color: rgb(161, 83, 83);
     text-decoration: none;
 }
 
@@ -80,12 +80,12 @@ button{
     font-style: italic;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    background-color: coral;
+    background-color: $color-secundario;
 }
 
 header h1{
     font-size: 2rem;
-    background-color: rgb(155, 87, 87);
+    background-color: $color-secundario;
 }
 
 
@@ -93,7 +93,7 @@ header h1{
     font-style: italic;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(185, 154, 154);
+    background-color: $color-principal;
 }
 
 
@@ -288,7 +288,7 @@ main{
 
 
 ul ol{
-    color: rgb(63, 63, 63);
+    color: rgb(240, 240, 240);
     font-size: larger;
     font-weight: bolder;
 }
@@ -305,7 +305,7 @@ figcaption{
 /* pie de pagina */
 
 footer{
-    background: linear-gradient(70deg, rgb(73, 72, 73), rgb(97, 97, 97));
+    background: $color-secundario;
     grid-area: footer;
     text-align: center;
     font-size: large;
@@ -361,10 +361,12 @@ footer{
     header{
         flex-direction: row;
         justify-content: space-around;
+        background-color: $color-secundario;
     }
 
     body{
         font-family: 'Roboto', sans-serif;
+        background-color: $color-principal;
 
     }
 }

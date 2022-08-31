@@ -12,7 +12,7 @@ body {
 
 /* titulos */
 h1, h2 {
-  color: lightcoral;
+  color: lightblue;
   font-weight: bold;
   font-style: italic;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
@@ -29,40 +29,40 @@ header {
   padding: 2px; }
   header nav {
     text-decoration: none;
-    color: lightcoral;
+    color: lightblue;
     display: flex;
     column-gap: 10px;
-    background-color: #ce3b3b;
+    background-color: lightcoral;
     list-style: none;
-    background-color: #ce3b3b;
+    background-color: lightcoral;
     padding: 5px;
     font-weight: bold; }
 
 a {
-  color: #333333;
+  color: #a15353;
   text-decoration: none; }
 
 header a {
   text-decoration: none; }
 
 a:hover {
-  background-color: #b82b2b; }
+  background-color: lightblue; }
 
 button {
   font-style: italic;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  background-color: coral; }
+  background-color: lightcoral; }
 
 header h1 {
   font-size: 2rem;
-  background-color: #9b5757; }
+  background-color: lightcoral; }
 
 .menu {
   font-style: italic;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  background-color: #b99a9a; }
+  background-color: lightblue; }
 
 /* barra de navegacion fija */
 .menu {
@@ -200,7 +200,7 @@ main {
   padding: 5px; }
 
 ul ol {
-  color: #3f3f3f;
+  color: #f0f0f0;
   font-size: larger;
   font-weight: bolder; }
 
@@ -212,7 +212,7 @@ figcaption {
 
 /* pie de pagina */
 footer {
-  background: linear-gradient(70deg, #494849, #616161);
+  background: lightcoral;
   grid-area: footer;
   text-align: center;
   font-size: large; }
@@ -242,6 +242,8 @@ footer {
 @media screen and (min-width: 1024px) {
   header {
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: space-around;
+    background-color: lightcoral; }
   body {
-    font-family: 'Roboto', sans-serif; } }
+    font-family: 'Roboto', sans-serif;
+    background-color: lightblue; } }
