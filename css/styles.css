@@ -17,7 +17,7 @@ header {
 /* estilos generales */
 /* body */
 body {
-  background: #fff4e3; }
+  background: #eeddc5; }
 
 /* titulos */
 h1, h2 {
@@ -70,7 +70,7 @@ header h1 {
   font-weight: bold; }
 
 main div {
-  background-color: #fff4e3; }
+  background-color: #eeddc5; }
 
 div {
   background-color: #8e713a;
@@ -80,7 +80,7 @@ div {
   font-style: italic;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  background-color: #fff4e3; }
+  background-color: #eeddc5; }
 
 /* barra de navegacion fija */
 .menu {
@@ -90,7 +90,7 @@ div {
 
 /* estilos del main */
 main {
-  background-color: #fff4e3;
+  background-color: #eeddc5;
   height: 100vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -273,6 +273,6 @@ footer {
     background-color: #8e713a; }
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fff4e3; }
+    background-color: #eeddc5; }
   a:hover {
     background-color: #ffda9e; } }
