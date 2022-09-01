@@ -1,4 +1,13 @@
 /*accedemos a las variables partials*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main-dos, .main-tres, .main-cuatro, .main-cinco {
+  display: grid;
+  grid-template-columns: auto auto auto auto; }
+
 /* reset */
 * {
   margin: 0;
@@ -23,9 +32,6 @@ h2 {
 /* estilos de header */
 /* navegacion */
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 2px; }
   header nav {
     color: #ffda9e;
@@ -117,8 +123,6 @@ main {
 
 .main-dos {
   height: 100vh;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
   grid-template-areas: "main-p main-p" "parrafo parrafo" "parrafo parrafo" "parrafo parrafo" "footer footer" "footer footer";
   justify-content: center;
@@ -127,8 +131,6 @@ main {
 
 .main-tres {
   height: 100vh;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
   grid-template-rows: 1.5fr 1fr 1fr 1fr;
   grid-template-areas: "main-p main-p" "imagen-uno imagen-dos" "imagen-tres imagen-cuatro" "parrafo parrafo" "footer footer";
   justify-content: center;
@@ -138,8 +140,6 @@ main {
 
 .main-cuatro {
   height: 100vh;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
   grid-template-areas: "main-p main-p" "parrafo parrafo" "mapa mapa" "parrafo-dos parrafo-dos";
   justify-content: center;
@@ -148,8 +148,6 @@ main {
 
 .main-cinco {
   height: 100vh;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
   grid-template-areas: "main-p main-p" "imagen-uno imagen-dos" "imagen-tres imagen-tres" "parrafo parrafo";
   justify-content: center;

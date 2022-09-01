@@ -10,7 +10,7 @@
 @import "bases/variables";
 @import "bases/listas";
 @import "bases/mixin";
-
+@import "bases/extend";
 
 /* reset */
 *{
@@ -47,10 +47,8 @@ h2{
 /* navegacion */
 
 header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     @include medidas(2px);
+    @extend %flex;
     nav{
     color: $color-secundario;
     text-decoration: none;
@@ -177,9 +175,8 @@ main{
     grid-area: maindos;
 }
 .main-dos{
+    @extend %grid;
     height: 100vh;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
     grid-template-areas:"main-p main-p"
                         "parrafo parrafo"
@@ -193,9 +190,8 @@ main{
 }
 
 .main-tres{
+    @extend %grid;
     height: 100vh;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
     grid-template-rows: 1.5fr 1fr 1fr 1fr;
 
     grid-template-areas:"main-p main-p"
@@ -210,9 +206,8 @@ main{
 }
 
 .main-cuatro{
+    @extend %grid;
     height: 100vh;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
 
     grid-template-areas:"main-p main-p"
@@ -225,9 +220,8 @@ main{
 }
 
 .main-cinco{
+    @extend %grid;
     height: 100vh;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
 
     grid-template-areas:"main-p main-p"
