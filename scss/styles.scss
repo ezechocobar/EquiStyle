@@ -8,6 +8,8 @@
 //llamamos a las variables
 /*accedemos a las variables partials*/
 @import "bases/variables";
+@import "bases/listas";
+@import "bases/mixin";
 
 
 /* reset */
@@ -38,6 +40,7 @@ h1, h2{
 }
 h2{
     font-size: larger;
+    color: nth($colores, 3);
 }
 /* estilos de header */
 
@@ -47,7 +50,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2px;
+    @include medidas(2px);
     nav{
     color: $color-secundario;
     text-decoration: none;
@@ -56,7 +59,7 @@ header{
     background-color: $color-terceario;
     list-style: none;
     background-color: $color-terceario;
-    padding: 5px;
+    @include medidas(5px);
     font-weight: bold;
     }
 }
@@ -244,9 +247,9 @@ main{
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
-    line-height: 2rem;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    @include box-model;
     padding-top: 50px;
 }
 
@@ -265,7 +268,7 @@ main{
     grid-area: imagen-uno;
     text-align: center;
     color: rgb(11, 10, 12);
-    padding: 10px;
+    @include medidas(10px);
     align-self: center;
 }
 
@@ -273,14 +276,14 @@ main{
     grid-area: imagen-dos;
     text-align: center;
     color: rgb(13, 13, 14);
-    padding: 10px;
+    @include medidas(10px);
 }
 
 .imagen-tres{
     grid-area: imagen-tres;
     text-align: center;
     color: rgb(5, 5, 5);
-    padding: 10px;
+    @include medidas(10px);
 }
 
 
@@ -288,7 +291,7 @@ main{
     grid-area: imagen-cuatro;
     text-align: center;
     color: rgb(3, 3, 3);
-    padding: 10px;
+    @include medidas(10px);
 }
 
 
@@ -299,20 +302,20 @@ main{
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
-    line-height: 2rem;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px;
+    @include medidas(5px);
+    @include box-model;
 }
 .parrafo-dos{
     grid-area: parrafo-dos;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
-    line-height: 2rem;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px;
+    @include medidas(5px);
+    @include box-model;
 }
 
 
@@ -326,7 +329,7 @@ ul ol{
 figcaption{
     text-align: center;
     font-weight: bold;
-    padding: 2px;
+    @include medidas(2px);
 }
 
 figcaption cite a{
@@ -390,6 +393,9 @@ footer{
         font-size: 1.5rem;
     }
 
+    a:hover{
+        background-color: $color-secundario;
+    }
 
 }
 

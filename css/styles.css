@@ -17,7 +17,8 @@ h1, h2 {
   font-family: Georgia, 'Times New Roman', Times, serif; }
 
 h2 {
-  font-size: larger; }
+  font-size: larger;
+  color: #8e713a; }
 
 /* estilos de header */
 /* navegacion */
@@ -161,9 +162,9 @@ main {
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
-  line-height: 2rem;
   font-style: italic;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 2rem;
   padding-top: 50px; }
 
 /* imagenes */
@@ -203,20 +204,20 @@ main {
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
-  line-height: 2rem;
   font-style: italic;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 5px; }
+  padding: 5px;
+  line-height: 2rem; }
 
 .parrafo-dos {
   grid-area: parrafo-dos;
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
-  line-height: 2rem;
   font-style: italic;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding: 5px; }
+  padding: 5px;
+  line-height: 2rem; }
 
 ul ol {
   font-size: larger;
@@ -262,7 +263,9 @@ footer {
     display: block;
     grid-area: img-nosotros; }
   .main-p {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  a:hover {
+    background-color: #ffda9e; } }
 
 /* mediaquerie desktop*/
 @media screen and (min-width: 1024px) {

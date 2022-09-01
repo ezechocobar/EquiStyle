@@ -1,0 +1,13 @@
+//mixin con parametros
+
+@mixin medidas($padding){
+    padding: $padding;
+
+}
+
+
+//mixin sin parametros
+
+@mixin box-model{
+    line-height: 2rem;
+}
