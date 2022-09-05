@@ -5,7 +5,6 @@ header {
   align-items: center; }
 
 .main-dos, .main-tres, .main-cuatro, .main-cinco {
-  display: grid;
   grid-template-columns: auto auto auto auto; }
 
 /* reset */
@@ -111,7 +110,7 @@ main {
   animation-duration: 5s;
   animation-timing-function: linear; }
 
-@keyframes girar{
+@keyframes girar {
   fron {
     transform: scale(2s); }
   to {
@@ -126,6 +125,7 @@ main {
 
 .main-dos {
   height: 100vh;
+  display: grid;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
   grid-template-areas: "main-p main-p"
  "parrafo parrafo"
@@ -139,6 +139,7 @@ main {
 
 .main-tres {
   height: 100vh;
+  display: grid;
   grid-template-rows: 1.5fr 1fr 1fr 1fr;
   grid-template-areas: "main-p main-p"
  "imagen-uno imagen-dos"
@@ -151,6 +152,7 @@ main {
   align-content: center; }
 
 .main-cuatro {
+  display: grid;
   height: 100vh;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
   grid-template-areas: "main-p main-p"
@@ -162,6 +164,7 @@ main {
   align-items: center; }
 
 .main-cinco {
+  display: grid;
   height: 100vh;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
   grid-template-areas: "main-p main-p"
