@@ -1,5 +1,5 @@
 # ignorar carpeta node_modules
-node_modules
+node_modules/
 
 # ignorar gitignore
 
