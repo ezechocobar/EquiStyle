@@ -84,6 +84,7 @@ a:hover a:focus{
     color: $color-terceario;
 }
 
+
 button{
     font-style: italic;
     font-weight: bold;
@@ -213,7 +214,8 @@ main{
     grid-template-areas:"main-p main-p"
                         "parrafo parrafo"
                         "mapa mapa"
-                        "parrafo-dos parrafo-dos";
+                        "parrafo-dos parrafo-dos"
+                        "footer footer";
     justify-content: center;
     justify-items: center;
     align-items: center;   
@@ -354,9 +356,19 @@ footer{
     grid-area: footer;
 }
 
+
+.contactohover:hover{
+    background-color: $color-hover;
+    text-decoration: none;
+    color: $color-terceario;
+    a:hover a:focus{
+        background-color: $color-hover;
+    }
+
+}
 /* mediaquerie */
 
-/* mediaquerie mobile*/
+/*mediaquerie mobile*/
 
 @media screen and (min-width:600px){
     header h1, h2{
@@ -394,7 +406,7 @@ footer{
 }
 
 
-/* mediaquerie desktop*/
+/*mediaquerie desktop*/
 
 
 @media screen and (min-width:1024px){
