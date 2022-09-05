@@ -141,7 +141,7 @@ main {
 .main-cuatro {
   height: 100vh;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
-  grid-template-areas: "main-p main-p" "parrafo parrafo" "mapa mapa" "parrafo-dos parrafo-dos";
+  grid-template-areas: "main-p main-p" "parrafo parrafo" "mapa mapa" "parrafo-dos parrafo-dos" "footer footer";
   justify-content: center;
   justify-items: center;
   align-items: center; }
@@ -246,8 +246,15 @@ footer {
   color: #000;
   grid-area: footer; }
 
+.contactohover:hover {
+  background-color: #fdebd0;
+  text-decoration: none;
+  color: #8e713a; }
+  .contactohover:hover a:hover a:focus {
+    background-color: #fdebd0; }
+
 /* mediaquerie */
-/* mediaquerie mobile*/
+/*mediaquerie mobile*/
 @media screen and (min-width: 600px) {
   header h1, h2 {
     font-size: 2.5rem; }
@@ -265,7 +272,7 @@ footer {
   a:hover {
     background-color: #ffda9e; } }
 
-/* mediaquerie desktop*/
+/*mediaquerie desktop*/
 @media screen and (min-width: 1024px) {
   header {
     flex-direction: row;
