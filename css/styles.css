@@ -53,13 +53,6 @@ a {
 header a {
   text-decoration: none; }
 
-a:hover a:focus {
-  background-color: #fdebd0; }
-
-.hoverindex:hover {
-  background-color: #fdebd0;
-  color: #8e713a; }
-
 button {
   font-style: italic;
   font-weight: bold;
@@ -102,7 +95,8 @@ main {
   align-items: center; }
 
 .img-nosotros {
-  display: none; }
+  display: none;
+  margin: 50px; }
 
 .girar {
   animation-name: girar;
@@ -123,9 +117,9 @@ main {
   grid-area: maindos; }
 
 .main-dos {
-  height: 100vh;
+  height: 155vh;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
-  grid-template-areas: "main-p main-p" "parrafo parrafo" "parrafo parrafo" "parrafo parrafo" "footer footer" "footer footer";
+  grid-template-areas: "main-p main-p" "imagen-uno imagen-dos" "imagen-tres imagen-cuatro" "footer footer";
   justify-content: center;
   justify-items: center;
   align-items: center; }
@@ -160,7 +154,7 @@ main {
 .main-p {
   grid-area: main-p;
   text-align: center;
-  font-weight: bold;
+  font-weight: bold 2px 2px black;
   font-size: 1.2rem;
   font-style: italic;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -168,35 +162,34 @@ main {
   padding-top: 50px; }
 
 /* imagenes */
-.animacion {
-  transform: rotate(0.5deg); }
-  .animacion:hover {
-    transform: scale(0.9); }
+.animacion:hover {
+  transform: scale(0.9);
+  background-color: #8e713a; }
 
 .imagen-uno {
   grid-area: imagen-uno;
   text-align: center;
-  color: #0b0a0c;
   padding: 10px;
-  align-self: center; }
+  align-self: center;
+  color: #443d29; }
 
 .imagen-dos {
   grid-area: imagen-dos;
   text-align: center;
-  color: #0d0d0e;
-  padding: 10px; }
+  padding: 10px;
+  color: #443d29; }
 
 .imagen-tres {
   grid-area: imagen-tres;
   text-align: center;
-  color: #050505;
-  padding: 10px; }
+  padding: 10px;
+  color: #443d29; }
 
 .imagen-cuatro {
   grid-area: imagen-cuatro;
   text-align: center;
-  color: #030303;
-  padding: 10px; }
+  padding: 10px;
+  color: #443d29; }
 
 /* estilo de los parrafos */
 .parrafo {
@@ -228,6 +221,9 @@ figcaption {
   text-align: center;
   font-weight: bold;
   padding: 2px; }
+
+.cortes {
+  background-color: #8e713a; }
 
 figcaption cite a {
   color: #8e713a; }
@@ -267,6 +263,10 @@ footer {
     grid-template-areas: "main-p main-p img-nosotros img-nosotros" "imagen-uno imagen-dos imagen-tres imagen-cuatro" "parrafo parrafo parrafo parrafo" "footer footer footer footer";
     column-gap: 1rem;
     margin: 25px; }
+  .main-dos {
+    height: 180vh;
+    grid-template-columns: repeat(2, 20fr);
+    grid-template-areas: "main-p main-p" "imagen-uno imagen-dos" "imagen-tres imagen-cuatro" "footer footer"; }
   .img-nosotros {
     display: block;
     grid-area: img-nosotros; }
@@ -284,6 +284,6 @@ footer {
   body {
     font-family: 'Roboto', sans-serif;
     background-color: #eeddc5;
-    margin: 5px; }
+    margin: 4px; }
   a:hover {
     background-color: #ffda9e; } }
