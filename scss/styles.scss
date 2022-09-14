@@ -27,6 +27,7 @@
 
 body{
     background: $color-principal;
+    margin: 1px;
 }
 
 
@@ -73,15 +74,6 @@ a{
 header a{
     text-decoration: none;
     
-}
-
-a:hover a:focus{
-    background-color: $color-hover;
-}
-
-.hoverindex:hover{
-    background-color: $color-hover;
-    color: $color-terceario;
 }
 
 
@@ -146,6 +138,7 @@ main{
 
 .img-nosotros{
     display: none;
+    margin: 50px;
 }
 
 .girar{
@@ -175,15 +168,14 @@ main{
 .main-dos{
     grid-area: maindos;
 }
+
 .main-dos{
     @extend %grid;
-    height: 100vh;
+    height: 155vh;
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
     grid-template-areas:"main-p main-p"
-                        "parrafo parrafo"
-                        "parrafo parrafo"
-                        "parrafo parrafo"
-                        "footer footer"
+                        "imagen-uno imagen-dos"
+                        "imagen-tres imagen-cuatro"
                         "footer footer";
     justify-content: center;
     justify-items: center;
@@ -209,13 +201,13 @@ main{
 .main-cuatro{
     @extend %grid;
     height: 100vh;
+    width: 100%;
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
-
-    grid-template-areas:"main-p main-p"
-                        "parrafo parrafo"
-                        "mapa mapa"
-                        "parrafo-dos parrafo-dos"
-                        "footer footer";
+    grid-template-areas: "main-p main-p"
+                         "parrafo parrafo"
+                         "mapa mapa"
+                         "parrafo-dos parrafo-dos"
+                         "footer footer";
     justify-content: center;
     justify-items: center;
     align-items: center;   
@@ -227,7 +219,8 @@ main{
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
 
     grid-template-areas:"main-p main-p"
-                        "imagen-uno imagen-dos"
+                        "imagen-uno imagen-uno"
+                        "imagen-dos imagen-dos"
                         "imagen-tres imagen-tres"
                         "parrafo parrafo";
     justify-content: center;
@@ -241,7 +234,7 @@ main{
 .main-p{
     grid-area: main-p;
     text-align: center;
-    font-weight: bold;
+    font-weight: bold 2px 2px black;
     font-size: 1.2rem;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -251,43 +244,72 @@ main{
 
 /* imagenes */
 
-.animacion{
-    transform: rotate(0.5deg);
- &:hover{
-    transform: scale(0.9);
-        
-    }
+.animacion:hover{
+        transform: scale(0.9);
+        background-color: $color-terceario;
+}
+
+/* estilo al parrafo de la imagen */
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+    @include medidas(2px);
+    
 }
 
 
+figcaption:hover{
+    color: rgb(95, 90, 29);
+}
+
+.cortes{
+    background-color: darkgoldenrod;
+}
+
+figcaption cite a:hover{
+    color: $color-terceario;
+}
+
+.imagen-uno:hover{
+    color: $color-terceario;
+}
 .imagen-uno{
     grid-area: imagen-uno;
     text-align: center;
-    color: rgb(11, 10, 12);
     @include medidas(10px);
     align-self: center;
+    color: rgb(68, 61, 41);
 }
 
+.imagen-dos:hover{
+    color: $color-terceario;
+}
 .imagen-dos{
     grid-area: imagen-dos;
     text-align: center;
-    color: rgb(13, 13, 14);
     @include medidas(10px);
+    color: rgb(68, 61, 41);
 }
 
+.imagen-tres:hover{
+    color: $color-terceario;
+}
 .imagen-tres{
     grid-area: imagen-tres;
     text-align: center;
-    color: rgb(5, 5, 5);
     @include medidas(10px);
+    color: rgb(68, 61, 41);
 }
 
-
+.imagen-cuatro:hover{
+    color: $color-terceario;
+}
 .imagen-cuatro{
     grid-area: imagen-cuatro;
     text-align: center;
-    color: rgb(3, 3, 3);
     @include medidas(10px);
+    color: rgb(68, 61, 41);
 }
 
 
@@ -318,18 +340,6 @@ main{
 ul ol{
     font-size: larger;
     font-weight: bolder;
-}
-
-/* estilo al parrafo de la imagen */
-
-figcaption{
-    text-align: center;
-    font-weight: bold;
-    @include medidas(2px);
-}
-
-figcaption cite a{
-    color: $color-terceario;
 }
 
 
@@ -379,7 +389,6 @@ footer{
         font-size: 1.5rem;
     }
 
-
     main{
         grid-template-columns: repeat(4, 0.2fr);
         grid-template-areas:"main-p main-p img-nosotros img-nosotros"
@@ -387,7 +396,17 @@ footer{
                             "parrafo parrafo parrafo parrafo"
                             "footer footer footer footer";
         column-gap: 1rem;
+        margin: 25px;
     
+    }
+
+    .main-dos{
+        height: 180vh;
+        grid-template-columns: repeat(2, 20fr);
+        grid-template-areas: "main-p main-p"
+                             "imagen-uno imagen-dos"
+                             "imagen-tres imagen-cuatro"
+                             "footer footer";
     }
 
     .img-nosotros{
@@ -419,6 +438,7 @@ footer{
     body{
         font-family: 'Roboto', sans-serif;
         background-color: $color-principal;
+        margin: 4px;
 
     }
     a:hover{
