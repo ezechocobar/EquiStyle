@@ -219,7 +219,8 @@ main{
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
 
     grid-template-areas:"main-p main-p"
-                        "imagen-uno imagen-dos"
+                        "imagen-uno imagen-uno"
+                        "imagen-dos imagen-dos"
                         "imagen-tres imagen-tres"
                         "parrafo parrafo";
     justify-content: center;
@@ -248,8 +249,31 @@ main{
         background-color: $color-terceario;
 }
 
+/* estilo al parrafo de la imagen */
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+    @include medidas(2px);
+    
+}
 
 
+figcaption:hover{
+    color: rgb(95, 90, 29);
+}
+
+.cortes{
+    background-color: darkgoldenrod;
+}
+
+figcaption cite a:hover{
+    color: $color-terceario;
+}
+
+.imagen-uno:hover{
+    color: $color-terceario;
+}
 .imagen-uno{
     grid-area: imagen-uno;
     text-align: center;
@@ -258,7 +282,9 @@ main{
     color: rgb(68, 61, 41);
 }
 
-
+.imagen-dos:hover{
+    color: $color-terceario;
+}
 .imagen-dos{
     grid-area: imagen-dos;
     text-align: center;
@@ -266,6 +292,9 @@ main{
     color: rgb(68, 61, 41);
 }
 
+.imagen-tres:hover{
+    color: $color-terceario;
+}
 .imagen-tres{
     grid-area: imagen-tres;
     text-align: center;
@@ -273,7 +302,9 @@ main{
     color: rgb(68, 61, 41);
 }
 
-
+.imagen-cuatro:hover{
+    color: $color-terceario;
+}
 .imagen-cuatro{
     grid-area: imagen-cuatro;
     text-align: center;
@@ -309,23 +340,6 @@ main{
 ul ol{
     font-size: larger;
     font-weight: bolder;
-}
-
-/* estilo al parrafo de la imagen */
-
-figcaption{
-    text-align: center;
-    font-weight: bold;
-    @include medidas(2px);
-    
-}
-
-.cortes{
-    background-color: $color-terceario;
-}
-
-figcaption cite a{
-    color: $color-terceario;
 }
 
 

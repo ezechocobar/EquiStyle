@@ -145,7 +145,7 @@ main {
 .main-cinco {
   height: 100vh;
   grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
-  grid-template-areas: "main-p main-p" "imagen-uno imagen-dos" "imagen-tres imagen-tres" "parrafo parrafo";
+  grid-template-areas: "main-p main-p" "imagen-uno imagen-uno" "imagen-dos imagen-dos" "imagen-tres imagen-tres" "parrafo parrafo";
   justify-content: center;
   justify-items: center;
   align-items: center; }
@@ -166,6 +166,24 @@ main {
   transform: scale(0.9);
   background-color: #8e713a; }
 
+/* estilo al parrafo de la imagen */
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  padding: 2px; }
+
+figcaption:hover {
+  color: #5f5a1d; }
+
+.cortes {
+  background-color: darkgoldenrod; }
+
+figcaption cite a:hover {
+  color: #8e713a; }
+
+.imagen-uno:hover {
+  color: #8e713a; }
+
 .imagen-uno {
   grid-area: imagen-uno;
   text-align: center;
@@ -173,17 +191,26 @@ main {
   align-self: center;
   color: #443d29; }
 
+.imagen-dos:hover {
+  color: #8e713a; }
+
 .imagen-dos {
   grid-area: imagen-dos;
   text-align: center;
   padding: 10px;
   color: #443d29; }
 
+.imagen-tres:hover {
+  color: #8e713a; }
+
 .imagen-tres {
   grid-area: imagen-tres;
   text-align: center;
   padding: 10px;
   color: #443d29; }
+
+.imagen-cuatro:hover {
+  color: #8e713a; }
 
 .imagen-cuatro {
   grid-area: imagen-cuatro;
@@ -215,18 +242,6 @@ main {
 ul ol {
   font-size: larger;
   font-weight: bolder; }
-
-/* estilo al parrafo de la imagen */
-figcaption {
-  text-align: center;
-  font-weight: bold;
-  padding: 2px; }
-
-.cortes {
-  background-color: #8e713a; }
-
-figcaption cite a {
-  color: #8e713a; }
 
 /* pie de pagina */
 footer div {
