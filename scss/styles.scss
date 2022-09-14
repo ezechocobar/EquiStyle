@@ -209,13 +209,16 @@ main{
 .main-cuatro{
     @extend %grid;
     height: 100vh;
+    width: 100%;
     grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
 
-    grid-template-areas:"main-p main-p"
-                        "parrafo parrafo"
-                        "mapa mapa"
-                        "parrafo-dos parrafo-dos"
-                        "footer footer";
+    grid-template-areas: "main-p main-p"
+                         "parrafo parrafo"
+                         "parrafo parrafo"
+                         "mapa mapa"
+                         "mapa mapa"
+                         "parrafo-dos parrafo-dos"
+                         "footer footer";
     justify-content: center;
     justify-items: center;
     align-items: center;   
