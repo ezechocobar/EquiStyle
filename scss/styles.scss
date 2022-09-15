@@ -165,21 +165,11 @@ main{
 }
 
 /* main galeria */
-.main-dos{
-    grid-area: maindos;
-}
 
 .main-dos{
-    @extend %grid;
-    height: 155vh;
-    grid-template-rows: 1.5fr 1fr 1fr 0.5fr;
-    grid-template-areas:"main-p main-p"
-                        "imagen-uno imagen-dos"
-                        "imagen-tres imagen-cuatro"
-                        "footer footer";
-    justify-content: center;
-    justify-items: center;
-    align-items: center;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
 }
 
 .main-tres{
@@ -376,9 +366,22 @@ footer{
     }
 
 }
+
+
 /* mediaquerie */
 
 /*mediaquerie mobile*/
+
+@media screen and (max-width:800px) {
+    .main-dos{
+        padding: 5px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5;
+    }
+}
 
 @media screen and (min-width:600px){
     header h1, h2{
@@ -390,7 +393,7 @@ footer{
     }
 
     main{
-        grid-template-columns: repeat(4, 0.2fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-areas:"main-p main-p img-nosotros img-nosotros"
                             "imagen-uno imagen-dos imagen-tres imagen-cuatro"
                             "parrafo parrafo parrafo parrafo"
@@ -401,12 +404,10 @@ footer{
     }
 
     .main-dos{
-        height: 180vh;
-        grid-template-columns: repeat(2, 20fr);
-        grid-template-areas: "main-p main-p"
-                             "imagen-uno imagen-dos"
-                             "imagen-tres imagen-cuatro"
-                             "footer footer";
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     .img-nosotros{
@@ -421,6 +422,7 @@ footer{
     a:hover{
         background-color: $color-secundario;
     }
+
 
 }
 
@@ -445,4 +447,10 @@ footer{
         background-color: $color-secundario;
     }
     
+    .main-dos{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
