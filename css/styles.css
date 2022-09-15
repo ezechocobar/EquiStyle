@@ -259,12 +259,10 @@ footer {
   .contactohover:hover a:hover a:focus {
     background-color: #fdebd0; }
 
-/*formulario de ayuda*/
-aside {
-  grid-area: formulario; }
-
-.formulario {
-  grid-area: formulario; }
+footer img {
+  align-items: center;
+  align-self: center;
+  align-content: center; }
 
 /* mediaquerie */
 /*mediaquerie mobile*/
