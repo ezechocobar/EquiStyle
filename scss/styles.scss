@@ -196,7 +196,6 @@ main{
     grid-template-areas: "main-p main-p"
                          "parrafo parrafo"
                          "mapa mapa"
-                         "parrafo-dos parrafo-dos"
                          "footer footer";
     justify-content: center;
     justify-items: center;
@@ -367,6 +366,18 @@ footer{
 
 }
 
+/*formulario de ayuda*/
+
+aside{
+    grid-area: formulario;
+}
+
+.formulario{
+    grid-area: formulario;
+}
+
+
+
 
 /* mediaquerie */
 
@@ -452,5 +463,9 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+    }
+
+    .main-cuatro{
+        grid-template-columns: repeat(1, 5fr);
     }
 }
