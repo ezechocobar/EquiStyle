@@ -366,17 +366,11 @@ footer{
 
 }
 
-/*formulario de ayuda*/
-
-aside{
-    grid-area: formulario;
+footer img{
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
-
-.formulario{
-    grid-area: formulario;
-}
-
-
 
 
 /* mediaquerie */
