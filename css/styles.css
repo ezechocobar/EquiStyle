@@ -5,7 +5,6 @@ header {
   align-items: center; }
 
 .main-tres, .main-cuatro, .main-cinco {
-  display: grid;
   grid-template-columns: auto auto auto auto; }
 
 /* reset */
