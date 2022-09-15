@@ -16,6 +16,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-32x32.png">
     <title>Ubicación</title>
 </head>
 <body>
@@ -48,6 +50,24 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4307.950447224584!2d-65.18988541371216!3d-26.796577699099114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225e8053eba871%3A0x4db5157fc9395fd7!2sAv.%20Juan%20B.%20Justo%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e1!3m2!1ses!2sar!4v1661979922590!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
         </p>
     </main>
+        <div class="main-p">
+            <h3><strong>CONSULTAS</strong></h3>
+            <form action="../php/archivo.php" method="post" class="formulario-2">
+                <fieldset>
+                    <label for="lcorreo2">Correo Electrónico</label>
+                    <input type="email" name="correo" id="lcorreo2" placeholder="Ingrese su correo" required>
+
+                    <label for="lasunto">Asunto:</label>
+                    <input type="text" name="contraseña" id="lasunto" placeholder="Título del asunto" required>
+
+                    <label for="ltexto">Mensaje:</label>
+                    <input type="textarea" name="consulta" id="ltexto" placeholder="Escriba su consulta aquí" required>
+                </fieldset>
+                <section class="botones2">
+                    <input type="submit" name="consultas">
+                </section>
+            </form>
+        </div>
     <footer class="container-fluid">
         <div class="row">
             <p class="col-12"><b>Todos los derechos reservados © Chocobar Franco Ezequiel</b></p>
